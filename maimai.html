@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>maimai DX</title>
+   <link rel="icon" href="img/favicon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- animate CSS -->
+   <link rel="stylesheet" href="css/animate.css">
+   <!-- owl carousel CSS -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <!-- font awesome CSS -->
+   <link rel="stylesheet" href="css/all.css">
+   <!-- flaticon CSS -->
+   <link rel="stylesheet" href="css/flaticon.css">
+   <link rel="stylesheet" href="css/themify-icons.css">
+   <!-- font awesome CSS -->
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <!-- swiper CSS -->
+   <link rel="stylesheet" href="css/slick.css">
+   <!-- style CSS -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+           <!--::header part start::-->
+<header class="main_menu single_page_menu">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="maimai.html">maimai DX</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mahjong.html">Mahjong Soul</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tetrio.html">TETR.IO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="arcaea.html">Arcaea</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="valorant.html">Valorant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sources.html">Sources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header part end-->
+
+   <!-- breadcrumb start-->
+   <section class="breadcrumb breadcrumb_bg_maimai">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="breadcrumb_iner text-center">
+                  <div class="breadcrumb_iner_item">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- breadcrumb start -->
+
+   <!--================Blog Area =================-->
+   <section class="blog_area single-post-area section_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 posts-list">
+               <div class="single-post">
+                  <div class="feature-img">
+                     <img class="img-fluid" src="img/maimai2.jpg" alt="">
+                  </div>
+                  <div class="blog_details">
+                     <h2>Is there a difference in my skill between on an arcade cabinet and on a mobile device in maimai DX?
+                     </h2>
+
+                     <p class="excert">
+                        	maimai でらっくす  (English: maimai Deluxe, maimai DX) is a Japanese rhythm game developed by Sega. Players tap, slide, and interact with a touchscreen and buttons to the beat of any of the game’s one thousand songs. Each song is scored based on timing accuracy, and players receive a “rating” based on how accurately they timed their inputs in their performance. These ratings contribute to a player’s overall でらっくす RATING (DX Rating), with harder songs and better performances contributing to higher ratings.
+
+                     </p>
+                     <p>
+                        	With this experiment, I aim to compare my skill across two different platforms: one on the actual arcade cabinet, and one on a mobile device through the KanadeDX platform. Although the two song sets consisting of my best 50 plays from each platform are not identical, I have chosen them as they reflect my competitive peak and are somewhat similar in difficulty. The key question for this test is,
+
+                     </p>
+                     <div class="quote-wrapper">
+                        <div class="quotes">
+                          Is there a statistically significant difference in my performance between these two platforms at a 99% confidence level?
+                        </div>
+                     </div>
+                     <p>
+                        Before answering the question, we must first lay out what procedure we are using, as well as identify the needed hypotheses. Naturally, our confidence level α = 0.01. Since I want to discuss a set of numbers, I chose to use a two-sample t-test. In order to also get a scale as to how big of a difference exists, I also chose to calculate the Cohen’s d coefficient.
+
+                     </p>
+                     <p>
+                       Defining the hypotheses is simple:
+                     </p>
+                     <table>
+                        <h4>Null Hypothesis (H₀): There is no difference in mean ratings.</h4><br>
+                        <h4>Alternative Hypothesis (Hₐ): The mean rating on KanadeDX is greater than on an actual maimai DX cabinet.</h4><br>
+                     </table>
+                     <p>
+                        The alternative hypothesis was ordered this way as I have a comparatively high playtime in KanadeDX than on an official arcade cabinet, and I want to see how much of a difference there is.
+
+                     </p>
+                     <p>
+                        The numbers in the bottom left of each box for the first image are the ratings for each song on arcade cabinets. For the second image, the rating numbers for mobile are the green numbers in the bottom right of each box.
+                     </p>
+                     
+                     <img class="img-fluid center" src="img/maimai3.png"  alt="Image of results on arcade">
+                     <img class="img-fluid center" src="img/maimai4.png" alt="Image of results on KanadeDX">
+
+
+                     <p>
+                        	Let’s look at the conditions required for this test to work properly:
+                     </p>
+
+                     <h4>1. The samples are picked at random.</h4>
+                     <p>
+                     Although not randomly selected in a formal experimental sense, the 50 ratings on each platform were all selected based on the highest rated performances, and thus are representative of peak skill on each platform.
+                     </p>
+                     <h4>2. The samples are independent of each other in their platform, and are independent of each other in the other platform.</h4>
+                     <p>
+                     Due to the nature of the game, all samples (in this case, songs) are independent of each other on a single platform. However, there are some songs that overlap between the platforms; for example, 宙天 (Expert 13.5) can be seen as the highest rated “New” performance in the first image, and the second-highest “New” performance in the second image. Although this overlap is somewhat minimal, the overall set size are large (as will be explained); thus, we proceed with the two-sample t-test, but may have somewhat conservative results.
+                     </p>
+                     <h4>3. The samples are approximately Normal.</h4><br>
+                     <p>
+                     Since both groups have sample sizes of 50, which is greater than the size of 30 required for the use of the Central Limit Theorem, the samples are approximately Normal.
+                     </p>
+
+                     <br><p>
+                        To proceed with the two-sample t-test, we must determine the mean rating and standard deviation for both platforms. Some simple calculations gives us with the following:
+                     </p>
+                     <table border="1" class="center">
+                        <tr>
+                           <th>Metric</th>
+                           <th>Arcade (maimai DX PRISM)</th>
+                           <th>Mobile (KanadeDX)</th>
+                        </tr>
+                        <tr>
+                           <td>Mean Rating</td>
+                           <td>240.76</td>
+                           <td>266.44</td>
+                        </tr>
+                        <tr>
+                           <td>Standard Deviation</td>
+                           <td>20.25</td>
+                           <td>8.51</td>
+                        </tr>
+                        <tr>
+                           <td>Size/td>
+                           <td>50</td>
+                           <td>50</td>
+                        </tr>
+                     </table>
+
+                     <br><p>
+	                     Using a TI-84 graphing calculator, it is easy to run the test. Simply input all of these values into the 2-SampTTest function. This gives a t-value of t = 7.6362, and converting this to a p-value gives 6.268 x 10-11, with 65.3558 degrees of freedom.
+                     </p>
+
+
+                     <p>
+	                     Thus, since the p-value is significantly less than the alpha level of 0.01, we reject the null hypothesis; there is significant evidence that the mean rating on KanadeDX is greater than the mean rating on an actual arcade cabinet. This is further supported by these graphs below, which show that while the ratings on the arcade cabinet (Platform 1) are spread wide and is skewed to the left, the performances done on a mobile device (Platform 2) is much closer to each other, having a smaller range even though it is skewed a bit to the left.
+                     </p>.
+
+                     <img class="img-fluid center" src="img/maimai5.png"  alt="Image of results on arcade">
+
+                     <br><p>
+	                     Thus, since the p-value is significantly less than the alpha level of 0.01, <strong> we reject the null hypothesis; there is significant evidence that the mean rating on KanadeDX is greater than the mean rating on an actual arcade cabinet.</strong> This is further supported by these graphs below, which show that while the ratings on the arcade cabinet (Platform 1) are spread wide and is skewed to the left, the performances done on a mobile device (Platform 2) is much closer to each other, having a smaller range even though it is skewed a bit to the left.
+                     </p>
+
+                     <br><p>
+	                     To find the Cohen’s d coefficient, use the following formula:
+                     </p>
+
+
+                     <img class="img-fluid center" src="img/maimai6.png"  alt="Image of results on arcade">
+
+
+                     <br><p>
+	                     where x is equal to the means of each distribution and s is equal to the standard deviation of each distribution.
+                     </p>
+
+                     <p>
+	                     Solving for Cohen’s d coefficient yields 1.653. Since this value is greater than 0.8, it indicates that the skill difference between the two platforms is a large effect.
+                     </p>
+
+
+                  </div>
+               </div>
+               
+            
+         </div>
+      </div>
+   </section>
+   <!--================Blog Area end =================-->
+
+  
+   <!-- jquery plugins here-->
+   <script src="js/jquery-1.12.1.min.js"></script>
+   <!-- popper js -->
+   <script src="js/popper.min.js"></script>
+   <!-- bootstrap js -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- easing js -->
+   <script src="js/jquery.magnific-popup.js"></script>
+   <!-- swiper js -->
+   <script src="js/swiper.min.js"></script>
+   <!-- swiper js -->
+   <script src="js/masonry.pkgd.js"></script>
+   <!-- particles js -->
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/jquery.nice-select.min.js"></script>
+   <!-- slick js -->
+   <script src="js/slick.min.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <script src="js/waypoints.min.js"></script>
+   <script src="js/contact.js"></script>
+   <script src="js/jquery.ajaxchimp.min.js"></script>
+   <script src="js/jquery.form.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/mail-script.js"></script>
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
+</body>
+
+</html>

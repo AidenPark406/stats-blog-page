@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>VALORANT</title>
+   <link rel="icon" href="img/favicon.png">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- animate CSS -->
+   <link rel="stylesheet" href="css/animate.css">
+   <!-- owl carousel CSS -->
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <!-- font awesome CSS -->
+   <link rel="stylesheet" href="css/all.css">
+   <!-- flaticon CSS -->
+   <link rel="stylesheet" href="css/flaticon.css">
+   <link rel="stylesheet" href="css/themify-icons.css">
+   <!-- font awesome CSS -->
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <!-- swiper CSS -->
+   <link rel="stylesheet" href="css/slick.css">
+   <!-- style CSS -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+           <!--::header part start::-->
+<header class="main_menu single_page_menu">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="maimai.html">maimai DX</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mahjong.html">Mahjong Soul</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tetrio.html">TETR.IO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="arcaea.html">Arcaea</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="valorant.html">Valorant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sources.html">Sources</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header part end-->
+
+   <!-- breadcrumb start-->
+   <section class="breadcrumb breadcrumb_bg_valorant">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="breadcrumb_iner text-center">
+                  <div class="breadcrumb_iner_item">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- breadcrumb start -->
+
+   <!--================Blog Area =================-->
+   <section class="blog_area single-post-area section_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 posts-list">
+        <div class="single-post">
+          <div class="feature-img">
+            <img class="img-fluid" src="img/valorant2.png" alt="Valorant game screenshot or ACS chart">
+          </div>
+          <div class="blog_details">
+            <h2>Analyzing My ACS in Valorant Compared to Other Players</h2>
+
+            <p class="excert">
+              Valorant is a competitive 5v5 first-person shooter game developed by Riot Games, where players rely on precise aim, team coordination, and strategic decision-making across tactical rounds. Each player's performance is quantified using the Average Combat Score (ACS), which reflects their overall in-game impact.
+            </p>
+
+            <p>
+              To evaluate whether I consistently outperform my teammates and opponents, I collected data from my 40 most recent ranked matches. For each game, I recorded my ACS and the average ACS of the other nine players (4 teammates + 5 opponents). Since these values are naturally paired within each match, I chose a paired t-test at the 95% confidence level.
+            </p>
+
+            <h4>Hypotheses</h4>
+            <p>
+              H₀: μ<sub>my ACS</sub> − μ<sub>others' ACS</sub> = 0 <br>
+              Hₐ: μ<sub>my ACS</sub> − μ<sub>others' ACS</sub> ≠ 0
+            </p>
+
+            <p>
+              <strong>Assumptions and Conditions:</strong>
+            </p>
+            <ul>
+              <li><strong>Paired Data:</strong> Each match provides a matched pair between my ACS and the average of the other players, making it a paired sample.</li>
+              <li><strong>Randomness:</strong> While not randomly selected, the 40 most recent matches represent my natural performance over time without cherry-picking.</li>
+              <li><strong>Normality:</strong> With n = 40, the Central Limit Theorem justifies the assumption of approximate normality.</li>
+            </ul>
+
+            <p>
+              Using the difference values from the 40 matches (My ACS − Avg. ACS of others), the test statistic is computed with:
+            </p>
+
+            <img class="img-fluid center" src="img/valorant3.png" alt="T-test formula image">
+
+            <p>
+              Given:
+              <ul>
+                <li>Mean difference (𝑥̄) = 1.65</li>
+                <li>Standard deviation (s) = 70.51</li>
+                <li>Sample size (n) = 40</li>
+              </ul>
+              Using a TI-84 and the T-Test function:
+            </p>
+
+            <img class="img-fluid center" src="img/valorant4.png" alt="T-test calculator result image">
+
+            <p>
+              The resulting <strong>p-value is 0.883</strong>, which is greater than α = 0.05. Therefore, we <strong>fail to reject the null hypothesis</strong>.
+            </p>
+
+            <div class="quote-wrapper">
+              <div class="quotes">
+                There is no convincing evidence that my average ACS is significantly different from the average ACS of the other players in my games.
+              </div>
+            </div>
+
+            <p>
+              This suggests that, based on this data, my combat performance is consistent with the average player in ranked Valorant games.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <!--================Blog Area end =================-->
+
+  
+   <!-- jquery plugins here-->
+   <script src="js/jquery-1.12.1.min.js"></script>
+   <!-- popper js -->
+   <script src="js/popper.min.js"></script>
+   <!-- bootstrap js -->
+   <script src="js/bootstrap.min.js"></script>
+   <!-- easing js -->
+   <script src="js/jquery.magnific-popup.js"></script>
+   <!-- swiper js -->
+   <script src="js/swiper.min.js"></script>
+   <!-- swiper js -->
+   <script src="js/masonry.pkgd.js"></script>
+   <!-- particles js -->
+   <script src="js/owl.carousel.min.js"></script>
+   <script src="js/jquery.nice-select.min.js"></script>
+   <!-- slick js -->
+   <script src="js/slick.min.js"></script>
+   <script src="js/jquery.counterup.min.js"></script>
+   <script src="js/waypoints.min.js"></script>
+   <script src="js/contact.js"></script>
+   <script src="js/jquery.ajaxchimp.min.js"></script>
+   <script src="js/jquery.form.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/mail-script.js"></script>
+   <!-- custom js -->
+   <script src="js/custom.js"></script>
+</body>
+
+</html>

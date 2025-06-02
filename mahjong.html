@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Mahjong Soul</title>
+   <link rel="icon" href="img/favicon.png">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+   <link rel="stylesheet" href="css/all.css">
+   <link rel="stylesheet" href="css/flaticon.css">
+   <link rel="stylesheet" href="css/themify-icons.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/slick.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header class="main_menu single_page_menu">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                    </button>
+                    <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="maimai.html">maimai DX</a></li>
+                            <li class="nav-item"><a class="nav-link" href="mahjong.html">Mahjong Soul</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tetrio.html">TETR.IO</a></li>
+                            <li class="nav-item"><a class="nav-link" href="arcaea.html">Arcaea</a></li>
+                            <li class="nav-item"><a class="nav-link" href="valorant.html">Valorant</a></li>
+                            <li class="nav-item"><a class="nav-link" href="sources.html">Sources</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="breadcrumb breadcrumb_bg_mahjong_soul">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb_iner text-center">
+          <div class="breadcrumb_iner_item"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog_area single-post-area section_padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 posts-list">
+        <div class="single-post">
+          <div class="feature-img">
+            <img class="img-fluid" src="img/mahjong1.png" alt="Mahjong gameplay screenshot">
+          </div>
+          <div class="blog_details">
+            <h2>Is there evidence of skill growth in Mahjong Soul’s three-player ranked mode?</h2>
+            <p class="excert">
+              Mahjong Soul is an online Japanese mahjong platform where players play against each other in real-time across the world. I am focusing on the three-player variant of Riichi Mahjong (commonly known as Sanma), which is much faster-paced and features aggressive gameplay. To evaluate my performance over time, I collected data from 369 ranked games.
+            </p>
+            <p>
+              Each game’s rating change was recorded. This value is determined by net point change, placement-based Uma bonuses or penalties, and fixed gains or losses from one’s rank (e.g., Expert 1, 2, etc.). My goal is to answer the following:
+            </p>
+            <div class="quote-wrapper">
+              <div class="quotes">
+                Am I consistently improving, declining, or stagnating in my skill?
+              </div>
+            </div>
+            <p>
+              I will use a 95% confidence interval for my true average rating change per game using a one-sample t-interval. If the entire interval is greater than 0, then I am improving; if less than 0, I am declining.
+            </p>
+            <h4>Checking Conditions:</h4>
+            <p>1. Although this is observational, these games represent my usual play and cover my entire performance history at this rank—thus introducing some natural randomness.</p>
+            <p>2. With 369 samples, the Central Limit Theorem applies, so the sampling distribution is approximately Normal.</p>
+            <p>3. Each game is independent, so their rating changes are also independent.</p>
+            <h4>Summary Statistics:</h4>
+            <table border="1" class="">
+              <tr><th>Metric</th><th>Value</th></tr>
+              <tr><td>Mean Rating</td><td>0.74</td></tr>
+              <tr><td>Standard Deviation</td><td>119.59</td></tr>
+              <tr><td>Sample Size</td><td>369</td></tr>
+              <tr><td>Degrees of Freedom</td><td>368</td></tr>
+              <tr><td>t*</td><td>1.967</td></tr>
+            </table>
+            <br>
+            <p>
+              Using the confidence interval formula: <img src="img/mahjong2.png" class="img-fluid center" alt="t-interval formula"> 
+              and substituting the values, we get the interval below:
+            </p>
+            <img src="img/tinterval_solution.png" class="img-fluid center" alt="solution image">
+            <br>
+            <p>
+              Since 0 is within this confidence interval, we cannot say that my true average rating gain per game is significantly different from 0. This suggests that I am not consistently gaining or losing skill at this level.
+            </p>
+            <p>
+              This is expected due to the game’s scoring system: first-place finishes provide substantial gain while last-place penalties are severe. With an expected equal chance of finishing in any place (1st, 2nd, or 3rd), rating changes will tend to balance out. The histogram below visualizes this distribution:
+            </p>
+            <img src="img/mahjong_histogram.png" class="img-fluid center" alt="rating histogram">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/masonry.pkgd.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/custom.js"></script>
+</body>
+
+</html>
